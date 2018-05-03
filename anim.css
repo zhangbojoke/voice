@@ -1,0 +1,205 @@
+@charset "utf-8";
+@-webkit-keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes darkRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes darkRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes flatRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flatRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes wheelRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes wheelRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes houseMove {
+  0% {
+    -webkit-transform: translate3d(0%,0%,0);
+    transform: translate3d(0%,0%,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0%,500%,0);
+    transform: translate3d(500%,0%,0);
+  }
+}
+
+@keyframes houseMove {
+  0% {
+    -webkit-transform: translate3d(0%,0%,0);
+    transform: translate3d(0%,0%,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0%,300%,0);
+    transform: translate3d(300%,0%,0);
+  }
+}
+
+
+
+@-webkit-keyframes flip {
+    0% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: url(http://p3.ifengimg.com/29b92e35b2b20708/2016/52/tape02.png) no-repeat left top;
+      background-size: 100% auto;
+    }
+    85.7% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: url(http://p3.ifengimg.com/29b92e35b2b20708/2016/52/tape02.png) no-repeat left top;
+      background-size: 100% auto;
+    }
+    86% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: url(http://p3.ifengimg.com/29b92e35b2b20708/2016/52/tape03.png) no-repeat left top;
+      background-size: 100% auto;
+    }
+    100% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 105deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 105deg);
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: url(http://p3.ifengimg.com/29b92e35b2b20708/2016/52/tape03.png) no-repeat left top;
+      background-size: 100% auto;
+    }
+  }
+
+  @keyframes flip {
+    0% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: url(http://p3.ifengimg.com/29b92e35b2b20708/2016/52/tape02.png) no-repeat left top;
+      background-size: 100% auto;
+    }
+    85.7% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: url(http://p3.ifengimg.com/29b92e35b2b20708/2016/52/tape02.png) no-repeat left top;
+      background-size: 100% auto;
+    }
+    86% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: url(http://p3.ifengimg.com/29b92e35b2b20708/2016/52/tape03.png) no-repeat left top;
+      background-size: 100% auto;
+    }
+    100% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 105deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 105deg);
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: url(http://p3.ifengimg.com/29b92e35b2b20708/2016/52/tape03.png) no-repeat left top;
+      background-size: 100% auto;
+    }
+  }
+
+  .flip {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+  }
