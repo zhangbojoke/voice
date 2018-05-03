@@ -30,7 +30,7 @@ app.pages[3] = (function() {
 
     $('.p3-btn-t').on('touchend', function(e) {
       e.preventDefault();
-      if (app.index == 10) {
+      if (app.index == 5) {
         $('.p3-score-click').hide();
         $('.p3-score').show();
         app.showPage(4);
