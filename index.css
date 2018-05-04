@@ -271,8 +271,8 @@ body {
 }
 
 .answer-status {
-  width: 26%;
-  top: 53%;
+  width: 23%;
+  top: 51%;
   display: none;
 }
 .tool{
@@ -517,14 +517,14 @@ body {
 */
 
 .p4-btn-reset {
-  width: 25%;
+  width: 30%;
   position: absolute;
   top: 92%;
   left: 15%;
 }
 
 .p4-btn-share {
-  width: 25%;
+  width: 30%;
   position: absolute;
   top: 92%;
   right: 15%;
@@ -547,13 +547,26 @@ body {
 }
 
 .p4-main {
-  width: 80%;
-  height: 84%;
+  width: 86%;
+  height: 78%;
+  border:2px solid #000;
   position: absolute;
-  left: 10%;
-  top: 4%;
+  left: 7%;
+  top: 10%;
   /*background: yellow;*/
   overflow: hidden;
+}
+.final-title{
+  position: absolute;
+  top:60%;
+  width: 76%;
+  left: 12%;
+}
+.final-content{
+  position: absolute;
+  top:70%;
+  width: 76%;
+  left: 12%;
 }
 
 .p4-num-box {

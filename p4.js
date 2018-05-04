@@ -20,15 +20,14 @@ app.pages[4] = (function() {
   }
 
   function initEvents() {
-    console.log(3);
     $('.p4-reset-t').on('touchstart', function(e) {
       e.preventDefault();
-      $('.p4-btn-reset').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/reset_03.png');
+      $('.p4-btn-reset').attr('src', './more-on.png');
     });
 
     $('.p4-reset-t').on('touchend', function(e) {
       e.preventDefault();
-      $('.p4-btn-reset').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/reset.png');
+      $('.p4-btn-reset').attr('src', './more.png');
       resetApp();
       app.showPage(2);
       return false;
@@ -36,13 +35,13 @@ app.pages[4] = (function() {
 
     $('.p4-share-t').on('touchstart', function(e) {
       e.preventDefault();
-      $('.p4-btn-share').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/fri-btn_03.png');
+      $('.p4-btn-share').attr('src', './share-on.png');
       app.showDialog('share');
     });
 
     $('.p4-share-t').on('touchend', function(e) {
       e.preventDefault();
-      $('.p4-btn-share').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/fri-btn.png');
+      $('.p4-btn-share').attr('src', './share.png');
       return false;
     });
 
@@ -81,15 +80,15 @@ app.pages[4] = (function() {
   var index = 1;
 
   function changeBtn() {
-    setInterval(function() {
-      if (index == 1) {
-        $('.p4-btn-share').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/fri-btn_03.png');
-        index = 0;
-      } else {
-        $('.p4-btn-share').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/fri-btn.png');
-        index = 1;
-      }
-    }, 600)
+    // setInterval(function() {
+    //   if (index == 1) {
+    //     $('.p4-btn-share').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/fri-btn_03.png');
+    //     index = 0;
+    //   } else {
+    //     $('.p4-btn-share').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/fri-btn.png');
+    //     index = 1;
+    //   }
+    // }, 600)
   }
 
   function initVoiceApi() {
@@ -147,40 +146,27 @@ app.pages[4] = (function() {
     setTimeout(function() {
       page.isFlipReady = true;
     }, 1000);
-
     var trueNum = app.score;
-    if (trueNum == 10) {
-      $('.first-img').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/1.png');
-      $('.hun-img').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/0.png');
-      $('.first-img').show();
-    } else if (trueNum == 0) {
-      $('.first-img').hide();
-      $('.hun-img').hide();
-    } else {
-      $('.hun-img').attr('src', 'http://p3.ifengimg.com/29b92e35b2b20708/2016/52/' + trueNum + '.png');
-      $('.first-img').hide();
+    switch (trueNum){
+      case 1:
+        $('.final-title').attr('src', './final-1-t.png');
+        $('.final-content').attr('src', './final-1-c.png');
+        break;
+      case 4:
+        $('.final-title').attr('src', './final-3-t.png');
+        $('.final-content').attr('src', './final-3-c.png');
+        break;
+      case 5:
+        $('.final-title').attr('src', './final-4-t.png');
+        $('.final-content').attr('src', './final-4-c.png');
+        break;
+      default :
+        $('.final-title').attr('src', './final-2-t.png');
+        $('.final-content').attr('src', './final-2-c.png');
+        break;
     }
-
-    var num = parseInt(Math.random() * 10);
-    var probability;
-    var shareProbability;
-    if (num >= 0 && num <= 3) {
-      probability = 1;
-    } else if (num > 3 && num <= 6) {
-      probability = 2;
-    } else if (num > 6 && num <= 9) {
-      probability = 3;
-    }
-
-    $('.p4-top-word').attr('src', app.p4Content[trueNum].topWord);
-    if (trueNum == 0) {
-      $('.p4-top-num').text(app.p4Content[trueNum].probabilityContent);
-      shareProbability = app.p4Content[trueNum].probabilityContent;
-    } else {
-      $('.p4-top-num').text(app.p4Content[trueNum].probabilityContent[probability]);
-      shareProbability = app.p4Content[trueNum].probabilityContent[probability];
-    }
-
+    $('.final-title').show();
+    $('.final-content').show();
   }
 
   function onLeave() {
