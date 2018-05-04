@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc3d87cd-f6cf-4180-906b-348a1f3743c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gs-2-1.png" afterPath="$PROJECT_DIR$/gs-2-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gs-3-1.png" afterPath="$PROJECT_DIR$/gs-3-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gs-4-1.png" afterPath="$PROJECT_DIR$/gs-4-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gs-5-1.png" afterPath="$PROJECT_DIR$/gs-5-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gs1.png" afterPath="$PROJECT_DIR$/gs1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/change-p2content.js" afterPath="$PROJECT_DIR$/change-p2content.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ip.audios.js" afterPath="$PROJECT_DIR$/ip.audios.js" />
     </list>
     <ignored path="听声音,猜城市_files.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,11 +75,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="change-p2content.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="change-p2content.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/change-p2content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="99" column="34" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
+            <state relative-caret-position="616">
+              <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ip.audios.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ip.audios.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -99,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="568" column="11" selection-start-line="568" selection-start-column="11" selection-end-line="568" selection-end-column="11" />
+            <state relative-caret-position="562">
+              <caret line="379" column="1" selection-start-line="379" selection-start-column="1" selection-end-line="379" selection-end-column="1" />
               <folding>
                 <element signature="e#679#1593#1" expanded="true" />
               </folding>
@@ -123,16 +139,6 @@
                 <marker date="1525411889146" expanded="true" signature="3189:3246" ph="..." />
                 <marker date="1525411889146" expanded="true" signature="3316:3373" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="change-p3content.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/change-p3content.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -169,13 +175,14 @@
         <option value="$PROJECT_DIR$/common.js" />
         <option value="$PROJECT_DIR$/p1.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/change-p2content.js" />
         <option value="$PROJECT_DIR$/change-p3content.js" />
         <option value="$PROJECT_DIR$/p3.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/p4.js" />
         <option value="$PROJECT_DIR$/p2.js" />
         <option value="$PROJECT_DIR$/index.css" />
+        <option value="$PROJECT_DIR$/change-p2content.js" />
+        <option value="$PROJECT_DIR$/ip.audios.js" />
       </list>
     </option>
   </component>
@@ -310,12 +317,12 @@
       <workItem from="1524909565306" duration="1967000" />
       <workItem from="1525312728484" duration="526000" />
       <workItem from="1525313259782" duration="20655000" />
-      <workItem from="1525403993879" duration="7978000" />
+      <workItem from="1525403993879" duration="10081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33557000" />
+    <option name="totallyTimeSpent" value="35660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -467,6 +474,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -500,6 +508,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -523,6 +532,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4664">
           <caret line="212" column="49" selection-start-line="212" selection-start-column="49" selection-end-line="212" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,6 +602,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="140" column="72" selection-start-line="140" selection-start-column="72" selection-end-line="140" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -636,14 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
           <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/change-p2content.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="99" column="34" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -705,11 +708,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="568" column="11" selection-start-line="568" selection-start-column="11" selection-end-line="568" selection-end-column="11" />
+        <state relative-caret-position="562">
+          <caret line="379" column="1" selection-start-line="379" selection-start-column="1" selection-end-line="379" selection-end-column="1" />
           <folding>
             <element signature="e#679#1593#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ip.audios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/change-p2content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

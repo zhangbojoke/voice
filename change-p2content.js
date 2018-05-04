@@ -9,11 +9,11 @@
       btn: {
         left: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-true'
+          btnClass: 'p2-city-false'
         },
         center: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-false'
+          btnClass: 'p2-city-true'
         },
         right: {
           btnImg: './choose-btn.png',
@@ -34,11 +34,11 @@
         },
         center: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-true'
+          btnClass: 'p2-city-false'
         },
         right: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-false'
+          btnClass: 'p2-city-true'
         }
       }
     },
@@ -51,11 +51,11 @@
       btn: {
         left: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-false'
+          btnClass: 'p2-city-true'
         },
         center: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-true'
+          btnClass: 'p2-city-false'
         },
         right: {
           btnImg: './choose-btn.png',
@@ -72,11 +72,11 @@
       btn: {
         left: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-false'
+          btnClass: 'p2-city-true'
         },
         center: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-true'
+          btnClass: 'p2-city-false'
         },
         right: {
           btnImg: './choose-btn.png',
@@ -97,11 +97,11 @@
         },
         center: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-true'
+          btnClass: 'p2-city-false'
         },
         right: {
           btnImg: './choose-btn.png',
-          btnClass: 'p2-city-false'
+          btnClass: 'p2-city-true'
         }
       }
     }
