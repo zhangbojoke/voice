@@ -286,10 +286,18 @@ class request{
     }
 
     public function getToken(){
-        if($this->cache->get('token')){
+        if($this->cache->get('token') && $this->cache->get('expire') >= time()){
             return $this->cache->get('token');
         }else{
-            return $this->getTokenByServer();
+            $res = $this->getTokenByServer();
+            if(isset($res['errcode'])){
+                //如果出现了err 那么就代表出现了错误 返回false
+                return false;
+            }
+            //否则是返回正确 记录token并返回
+            $this->cache->set('token','token');
+            $this->cache->set('expire',time()+7200);
+            return 'token';
         }
     }
 
@@ -304,7 +312,33 @@ class request{
     }
 
     public function getTicket(){
+        if($this->cache->get('ticket') && $this->cache->get('expire_t') >= time()){
+            return $this->cache->get('token');
+        }else{
+            $res = $this->getTokenByServer();
+            if(isset($res['errcode'])){
+                //如果出现了err 那么就代表出现了错误 返回false
+                return false;
+            }
+            //否则是返回正确 记录token并返回
+            $this->cache->set('ticket','token');
+            $this->cache->set('expire_t',time()+7200);
+            return 'token';
+        }
+    }
 
+    public function getTicketByServer(){
+        return $this->callServer('https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token='.$this->getToken().'&type=jsapi',[],'GET');
+    }
+
+    public function getNonceStr($length = 32)
+    {
+        $chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+        $str ="";
+        for ( $i = 0; $i < $length; $i++ )  {
+            $str .= substr($chars, mt_rand(0, strlen($chars)-1), 1);
+        }
+        return $str;
     }
 
     private function callServer($url,$options,$method='GET'){
@@ -315,7 +349,6 @@ class request{
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST,false);
-        var_dump($options);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $options );
         $res = curl_exec($curl);
         if (curl_errno($curl)) {
@@ -327,8 +360,26 @@ class request{
             }
         }
         curl_close($curl);
-        return $res;
+        return json_decode($res,true);
+    }
+
+    public function getParams(){
+        $params['noncestr'] = $this->getNonceStr();
+        $params['timestamp'] = "" . time();
+        $params['jsapi_ticket'] = $this->getTicket();
+        $params['url'] = 'http://' . $_SERVER['HTTP_HOST'];
+        ksort($params);
+        $buff = '';
+        foreach ($params as $k => $v) {
+            if ($k != "sign" && $v != "" && !is_array($v)) {
+                $buff .= $k . "=" . $v . "&";
+            }
+        }
+        $buff = substr($buff, 0, -1);
+        $params['signature'] = sha1($buff);
+        return $params;
     }
 }
-
+$model = new request();
+echo json_encode($model->getParams());
 ?>
