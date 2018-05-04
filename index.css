@@ -531,19 +531,19 @@ body {
 }
 
 .p4-reset-t {
-  width: 25%;
+  width: 30%;
   position: absolute;
   top: 92%;
   left: 15%;
-  height: 3rem;
+  height: 6rem;
 }
 
 .p4-share-t {
-  width: 25%;
+  width: 30%;
   position: absolute;
   top: 92%;
   right: 15%;
-  height: 3rem;
+  height: 6rem;
 }
 
 .p4-main {
