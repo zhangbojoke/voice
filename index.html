@@ -228,7 +228,6 @@
 </div>
 <script src="./scroll.js"></script>
 <script>
-    if (device.type === "mobile") {
     var onMenuShare = function (wx) {
         var href = "" || window.location.href.split('#')[0];
         this.link = href;
@@ -271,11 +270,8 @@
         var share = new onMenuShare(wx);
         $.ajax({
             type: 'get',
-            url: 'http://dyn.v.ifeng.com/wxshare/getShareInfo',
-            dataType: 'jsonp',
-            data: {
-                link: encodeURIComponent(share.link)
-            },
+            url: './sign.php',
+            dataType: 'json',
             success: share.init
         });
     };
@@ -304,9 +300,9 @@
             });
         }, 'next', '微信分享');
     } else {
+        console.log(1);
         loadWXScript('http://y1.ifengimg.com/d35d689b379d6896/2015/11/jweixin-1.0.0.js', wxCallback);
     }
-}
 </script> <!-- 页尾通栏  -->
 <audio controls="controls" style="display: none;"></audio>
 <span id="sbmarwbthv5"></span></body>
