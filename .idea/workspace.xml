@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc3d87cd-f6cf-4180-906b-348a1f3743c6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-1-a.png" afterPath="$PROJECT_DIR$/choose-1-a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-1-b.png" afterPath="$PROJECT_DIR$/choose-1-b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-1-c.png" afterPath="$PROJECT_DIR$/choose-1-c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-2-a.png" afterPath="$PROJECT_DIR$/choose-2-a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-2-b.png" afterPath="$PROJECT_DIR$/choose-2-b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-2-c.png" afterPath="$PROJECT_DIR$/choose-2-c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-3-a.png" afterPath="$PROJECT_DIR$/choose-3-a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-3-b.png" afterPath="$PROJECT_DIR$/choose-3-b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-3-c.png" afterPath="$PROJECT_DIR$/choose-3-c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-5-a.png" afterPath="$PROJECT_DIR$/choose-5-a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-5-b.png" afterPath="$PROJECT_DIR$/choose-5-b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose-5-c.png" afterPath="$PROJECT_DIR$/choose-5-c.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/index.css" />
     </list>
     <ignored path="听声音,猜城市_files.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,8 +123,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="540" column="13" selection-start-line="540" selection-start-column="13" selection-end-line="540" selection-end-column="13" />
+            <state relative-caret-position="562">
+              <caret line="545" column="15" selection-start-line="545" selection-start-column="15" selection-end-line="545" selection-end-column="15" />
               <folding>
                 <element signature="e#679#1593#1" expanded="true" />
               </folding>
@@ -311,12 +322,12 @@
       <workItem from="1524909565306" duration="1967000" />
       <workItem from="1525312728484" duration="526000" />
       <workItem from="1525313259782" duration="20655000" />
-      <workItem from="1525403993879" duration="10166000" />
+      <workItem from="1525403993879" duration="12736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35745000" />
+    <option name="totallyTimeSpent" value="38315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -718,8 +729,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="540" column="13" selection-start-line="540" selection-start-column="13" selection-end-line="540" selection-end-column="13" />
+        <state relative-caret-position="562">
+          <caret line="545" column="15" selection-start-line="545" selection-start-column="15" selection-end-line="545" selection-end-column="15" />
           <folding>
             <element signature="e#679#1593#1" expanded="true" />
           </folding>
